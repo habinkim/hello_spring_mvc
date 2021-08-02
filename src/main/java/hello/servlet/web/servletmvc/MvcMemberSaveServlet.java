@@ -29,7 +29,7 @@ public class MvcMemberSaveServlet extends HttpServlet {
 
 		request.setAttribute("member", member);
 
-		String viewPath = "/WEB_INF/views/save-result.jsp";
+		String viewPath = "/WEB-INF/views/save-result.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
 		dispatcher.forward(request, response);
 

@@ -2,7 +2,6 @@ package hello.servlet.web.frontcontroller.v1.controller;
 
 import hello.servlet.domain.member.Member;
 import hello.servlet.domain.member.MemberRepository;
-import hello.servlet.web.frontcontroller.v1.ControllerV1;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -27,7 +26,7 @@ public class MemberSaveControllerV1 implements ControllerV1 {
 
 		request.setAttribute("member", member);
 
-		String viewPath = "/WEB_INF/views/save-result.jsp";
+		String viewPath = "/WEB-INF/views/save-result.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
 		dispatcher.forward(request, response);
 
