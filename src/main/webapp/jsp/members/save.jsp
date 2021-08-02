@@ -12,7 +12,7 @@
 
     System.out.println("MemberSaveServlet.service");
     String username = request.getParameter("username");
-    Integer age = Integer.parseInt(request.getParameter("age"));
+    int age = Integer.parseInt(request.getParameter("age"));
 
     Member member = new Member(username, age);
     memberRepository.save(member);
@@ -26,6 +26,7 @@
 <ul>
     <li>id=<%=member.getId()%></li>
     <li>username=<%=member.getUsername()%></li>
+    <li>age=<%=member.getAge()%></li>
 </ul>
 <a href="/index.html">메인</a>
 </body>
